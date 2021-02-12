@@ -72,40 +72,40 @@ header{
 }
 
 .hero{
-  background-image: url(./img/fondos_header/index_header.jpeg);  
+  background-image: url(../img/fondos_header/index_header.jpeg);  
   height: 100vh;
   background-position: center center;
   background-size: cover;
 }
 
 .sobre-hero{
-  background-image: url(./img/fondos_header/sobre_header.jpg);
+  background-image: url(../img/fondos_header/sobre_header.jpg);
   background-attachment: fixed;
 }
 
 .inmuebles-hero{
-  background-image: url(./img/fondos_header/inmuebles_header.jpg);
+  background-image: url(../img/fondos_header/inmuebles_header.jpg);
   background-attachment: fixed;
 }
 
 
 .portafolioint-hero{
-  background-image: url(./img/fondos_header/portafolio_int_header.jpg);
+  background-image: url(../img/fondos_header/portafolio_int_header.jpg);
   background-attachment: fixed;
 }
 
 .portafolioext-hero{
-  background-image: url(./img/fondos_header/portafolio_ext_header.jpg);
+  background-image: url(../img/fondos_header/portafolio_ext_header.jpg);
   background-attachment: fixed;
 }
 
 .contacto-hero{
-  background-image: url(./img/fondos_header/contacto_header.jpg);
+  background-image: url(../img/fondos_header/contacto_header.jpg);
   background-attachment: fixed;
 }
 
 .proyectos-hero{
-  background-image: url(./img/fondos_header/proyectos.jpg);
+  background-image: url(../img/fondos_header/proyectos.jpg);
   background-attachment: fixed;
 }
 
@@ -311,19 +311,19 @@ z-index: 1;
 position: relative;
 height: 100%;
 width:100%;
-  background-image: url(./img/fondos_header/index_header.jpeg);
+  background-image: url(../img/fondos_header/index_header.jpeg);
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
-background-image: url(./img/fondos_header/inmuebles_header.jpg);
+background-image: url(../img/fondos_header/inmuebles_header.jpg);
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
-background-image: url(./img/fondos_header/diseño_index.jpg);
+background-image: url(../img/fondos_header/diseño_index.jpg);
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
