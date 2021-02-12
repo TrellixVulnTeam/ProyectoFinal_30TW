@@ -1,0 +1,156 @@
+
+.card{
+    width: 300px;
+    height: 400px;
+    background-color: #212529;
+    border:none;
+
+    &:hover{
+
+        cursor: pointer;
+        .card__img{
+            opacity: .5;
+            transition: 1s;
+        }
+    }
+    
+    .card__title{
+        font-size: 3rem;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .card__img{
+        width: 90%;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .card__descripcion{
+        width: 90%;
+        
+
+        .descripcion__ubicacion{
+            font-size: 3rem;
+            color: #ffffff;
+            grid-column: 1/2;
+
+        }
+        .ubicacion__txt{
+            font-size: 2rem;
+            color: #ffffff;
+            grid-column: 2/4;
+        }
+
+        .descripcion__item{
+
+            .item__bathroom{
+                color: #ffffff;
+                grid-column: 1/2;
+                font-size: 3rem;
+            }
+
+            .item__bedroom{
+                color: #ffffff;
+                grid-column: 2/3;
+                font-size: 3rem;           
+            }
+
+            .item__other{
+                color: #ffffff;
+                grid-column: 3/4;
+                font-size: 3rem;   
+            }
+        }
+    }    
+}
+
+
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: .5em;
+}
+
+.txt-proyecto{
+    align-items: flex-end;
+}
+
+@mixin proyecto {
+    
+
+    & img {
+
+        &:hover{
+            opacity: .5;
+            cursor: pointer;
+            transition: 1s;
+        }
+    }
+    
+}
+
+@mixin grid-col-1{
+    grid-column: 1/2;
+}
+
+@mixin grid-col-2{
+    grid-column: 2/3;
+}
+
+@mixin grid-col-3{
+    grid-column: 3/4;
+}
+
+
+
+.proyecto1{
+    @include proyecto;
+    @include grid-col-1;
+}
+.proyecto2{
+    @include proyecto;
+    @include grid-col-2;
+}
+.proyecto3{
+    @include proyecto;
+    @include grid-col-3;
+}
+.proyecto4{
+    @include proyecto;
+    @include grid-col-1;
+}
+.proyecto5{
+    @include proyecto;
+    @include grid-col-2;
+}
+.proyecto6{
+    @include proyecto;
+    @include grid-col-3;
+}
+
+
+
+.activo{
+
+    background: rgba( 255, 255, 255, 0.20 );
+    box-shadow: 0 8px 32px 0 rgba(40, 40, 44, 0.37);
+    backdrop-filter: blur( 11.0px );
+    -webkit-backdrop-filter: blur( 11.0px );
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.activo2{
+
+    background: #000000;
+
+}
+
+
+
+
+
+
+
+
