@@ -1,3 +1,31 @@
+.index-btn {
+  padding: 1rem 2rem 1.5rem 2rem;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 10px; }
+  .index-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    color: #ffffff;
+    transition: .5s ease-in-out;
+    cursor: pointer; }
+
+.enviar {
+  padding: 1rem 6rem;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 10px; }
+  .enviar:hover {
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #000000;
+    transition: .5s ease-in-out;
+    cursor: pointer; }
+
 .card {
   width: 300px;
   height: 400px;
