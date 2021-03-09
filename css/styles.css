@@ -11,6 +11,10 @@ html {
 }
 
 a {
+    color: #ffffff;
+}
+
+a:hover{
     text-decoration: none;
     color: #ffffff;
 }
@@ -22,7 +26,7 @@ h1 {
 h2 {
     font-size: 4rem;
     color: #000000;
-    padding: 5rem;
+    padding: 3rem;
 }
 
 h3 {
@@ -36,20 +40,15 @@ h4 {
 }
 
 p {
-    text-align: left;
+
     font-size: 2rem;
+    color: #333333;
 }
 
 img {
     width: 100%;
 }
 
-.far,
-.fas {
-    font-size: 5rem;
-    color: #c00000;
-    padding: 3rem;
-}
 
 .contenedor {
     max-width: 1200px;
@@ -81,6 +80,7 @@ header {
     font-weight: 700;
     font-family: 'Montserrat', 'Sans-serif';
     padding: 1rem;
+    color: #ffffff;
 }
 
 .logo a:hover {
@@ -175,7 +175,7 @@ header {
 #nav-icon span {
     display: block;
     position: absolute;
-    height: 5px;
+    height: 3px;
     width: 100%;
     background: #ffffff;
     border-radius: 9px;
@@ -526,27 +526,34 @@ a .fa-angle-double-down {
 
 /* Sobre Nosotros */
 
-.grid {
+.grid-sobre {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
+    gap: 2em;
     align-items: center;
 }
 
-.grid>div p {
-    font-size: 2rem;
+.grid-sobre > div p {
     padding: 2rem;
-    border-radius: 2rem;
-    color: #000000;
+    margin: 3rem 0;
     text-align: justify;
 }
 
-.grid>h2 {
+.grid-sobre>h2 {
     text-align: center;
 }
 
 .grid-proceso>h3 {
     text-align: center;
+}
+
+.imagen-somos img{
+    border-radius: 10px;
+    -webkit-box-shadow: 20px 22px 37px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 20px 22px 37px 5px rgba(0,0,0,0.75);
+    box-shadow: 20px 22px 37px 5px rgba(0,0,0,0.75);
+    align-self: center;
+    justify-self: center;
 }
 
 @media (min-width:320px) {
@@ -564,30 +571,11 @@ a .fa-angle-double-down {
     }
     .como-lo-hacemos {
         grid-column: 1/3;
-        text-align: center;
+        text-align: left;
     }
-    .proceso {
-        text-align: center;
-        grid-column: 1/3;
-    }
-    .grid-proceso {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding: 2rem;
-        border-radius: 2rem;
-    }
-    .informacion-inmueble,
-    .busqueda-inmueble,
-    .entrega-inmueble,
-    .informacion-disenio,
-    .diseniar-proceso,
-    .realizacion-proceso {
-        grid-column: 1/3;
-    }
-    .inmueble-proceso,
-    .disenio-proceso {
-        grid-column: 1/3;
-    }
+
+
+    
 }
 
 @media (min-width:480px) {
@@ -600,42 +588,84 @@ a .fa-angle-double-down {
     .como-lo-hacemos {
         grid-column: 1/3;
     }
-    .proceso {
-        grid-column: 1/4;
-    }
-    .grid-proceso {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding: 2rem;
-        border-radius: 2rem;
-    }
-    .inmueble-proceso,
-    .disenio-proceso {
-        grid-column: 1/4;
-    }
-    .informacion-inmueble,
-    .informacion-disenio {
-        grid-column: 1/2;
-    }
-    .busqueda-inmueble,
-    .diseniar-proceso {
-        grid-column: 2/3;
-    }
-    .entrega-inmueble,
-    .realizacion-proceso {
-        grid-column: 3/4;
-    }
+   
 }
 
 @media (min-width:1080px) {
     .imagen-somos {
-        grid-row: 1/3;
+        grid-column: 2/3;
+        grid-row: 1/2;
     }
     .como-lo-hacemos {
-        grid-column: 1/2;
+        grid-column: 1/3;
     }
 }
 
+.tarjetas{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+}
+
+.tarjeta-sobre .fondo{
+    width: 90%;
+    position: relative;
+    height: 450px;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+.tarjeta-sobre img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: .5;
+}
+
+.titulo-tarjeta{
+    position: relative;
+    top: -80%;  
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.descripcion-tarjeta{
+    position: relative;
+    line-height: 1;
+    font-weight: 300;
+    top: -93%;
+    text-align: center;
+}
+
+.link {
+    color: #ffffff;
+    position: absolute;
+    top: 60%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 00;
+    line-height: 1.2;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.link:hover{
+    text-decoration: none;
+    cursor: pointer;
+    background-size: 100% 2px;
+    color: #ffffff;
+}
 
 /* Catálogo */
 
@@ -898,12 +928,12 @@ footer {
 
 .newsletter-correo {
     background-color: #000000;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
+    border: 2px solid #868686;
+    border-radius: 5px;
     margin: 2rem 0;
     padding: .5rem 0;
     width: 400px;
-    color: white;
+    color: #ffffff;
     font-size: 1.5rem;
     justify-self: center;
 }

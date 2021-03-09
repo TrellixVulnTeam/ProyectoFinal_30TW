@@ -8,10 +8,14 @@
     border: 2px solid #ffffff;
     border-radius: 10px;
     &:hover {
-        background-color: rgba(0,0,0,0.8);
+        background: rgba( 255, 255, 255, 0.20);
+        box-shadow: 0 8px 32px 0 rgba(40, 40, 44, 0.37);
+        backdrop-filter: blur( 11.0px);
+        -webkit-backdrop-filter: blur( 11.0px);
+        border-radius: 10px;
         text-decoration: none;
         color: #ffffff;
-        transition: .5s ease-in-out;
+        transition: 1s ease-in-out;
         cursor: pointer;
     }
 }

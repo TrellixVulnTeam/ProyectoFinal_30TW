@@ -444,10 +444,11 @@ h6 {
 
 .display-4 {
     padding: 1rem;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 300;
     line-height: 1.2
 }
+
 
 hr {
     margin-top: 1rem;
@@ -10464,7 +10465,7 @@ a.text-primary:hover {
 }
 
 .text-secondary {
-    color: #6c757d!important
+    color: #b1bfca!important
 }
 
 a.text-secondary:focus,

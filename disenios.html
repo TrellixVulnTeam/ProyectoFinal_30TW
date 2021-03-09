@@ -6,6 +6,7 @@
     <meta name="description" content="Diseños para el hogar proporcionado por Crystal Houses">
 	<meta name="keywords" content="Diseños de interiores, Diseños de exteriores, Muebles para el hogar">
     <script src="https://kit.fontawesome.com/fb14f9773f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -29,7 +30,11 @@
 				</div>
 				
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-					<i class="fas fa-bars p-0 text-white"></i>
+					<div id="nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
 				</button>	
 
                 <nav class="menu collapse navbar-collapse " id="navbarTogglerDemo03">
@@ -75,24 +80,42 @@
         <p>In egestas vitae felis sit amet vehicula. Suspendisse a efficitur felis. Pellentesque non nisi elementum, aliquam odio sit amet, commodo est. Fusce quis semper nunc, id malesuada purus. Etiam faucibus ac risus id rutrum. Nam maximus, libero vitae viverra blandit, odio velit dapibus quam, et fermentum urna risus in dolor. Maecenas nulla lacus, volutpat vel nisl eu, euismod porttitor orci. Praesent a venenatis dui.</p>
 </main>
 
-<footer class="contenedor">     
-    <p class="copyright">Todos los derechos reservados &copy; 2021</p>
+<footer>     
+
     <div class="logo-footer">
         <a href="index.html">
             <p class="logo">Crystal Houses</p>
         </a>
     </div> 
+
     <div class="redes-sociales">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-youtube"></i></a>
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
-    </div>  
+    </div> 
+    
+    <div class="newsletter">
+
+        <p class="titulo-newsletter">Suscríbete a nuestro newsletter</p>
+
+        <input class="newsletter-correo" type="email" name="" id="" placeholder="tucorreo@mail.com">
+
+        <button type="submit" class="enviar enviar-sm">Suscribirse</button>
+
+    </div>
+
+    <p class="copyright">Todos los derechos reservados &copy; 2021</p>
+    
 </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="/js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="/js/script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
 </body>
 </html>
