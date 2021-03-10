@@ -1,6 +1,6 @@
 /* Botones */
 
-.index-btn {
+.btn {
     padding: 1rem 2rem 1.5rem 2rem;
     font-size: 2rem;
     color: #ffffff;
@@ -15,6 +15,28 @@
         border-radius: 10px;
         text-decoration: none;
         color: #ffffff;
+        transition: 1s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+.btn__light{
+    padding: 1rem 2rem 1.5rem 2rem;
+    font-size: 2rem;
+    margin:1rem 2rem;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    &:hover {
+        background: rgba( 255, 255, 255, 0.20);
+        box-shadow: 0 8px 32px 0 rgba(40, 40, 44, 0.37);
+        backdrop-filter: blur( 11.0px);
+        -webkit-backdrop-filter: blur( 11.0px);
+        border-radius: 10px;
+        text-decoration: none;
+        color: #000000;
         transition: 1s ease-in-out;
         cursor: pointer;
     }
@@ -36,6 +58,7 @@
     }
 }
 
+
 @media (max-width:768px){
 
     .enviar{
@@ -46,121 +69,23 @@
     
 }
 
-.card {
-    width: 300px;
-    height: 400px;
-    background-color: #212529;
-    border: none;
+.enviar__light{
+    padding: 1rem 6rem;
+    font-size: 2rem;
+    color: #000000;
+    background-color: transparent;
+    border: 2px solid #000000;
+    border-radius: 10px;
     &:hover {
-        cursor: pointer;
-        .card__img {
-            opacity: .5;
-            transition: 1s;
-        }
-    }
-    .card__title {
-        font-size: 3rem;
-        text-align: center;
+        background-color: #000000;
+        text-decoration: none;
         color: #ffffff;
-    }
-    .card__img {
-        width: 90%;
-        display: block;
-        margin: 10px auto;
-    }
-    .card__descripcion {
-        width: 90%;
-        .descripcion__ubicacion {
-            font-size: 3rem;
-            color: #ffffff;
-            grid-column: 1/2;
-        }
-        .ubicacion__txt {
-            font-size: 2rem;
-            color: #ffffff;
-            grid-column: 2/4;
-        }
-        .descripcion__item {
-            .item__bathroom {
-                color: #ffffff;
-                grid-column: 1/2;
-                font-size: 3rem;
-            }
-            .item__bedroom {
-                color: #ffffff;
-                grid-column: 2/3;
-                font-size: 3rem;
-            }
-            .item__other {
-                color: #ffffff;
-                grid-column: 3/4;
-                font-size: 3rem;
-            }
-        }
+        transition: .5s ease-in-out;
+        cursor: pointer;
     }
 }
 
-.proyectos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: .5em;
-}
 
-.txt-proyecto {
-    align-items: flex-end;
-}
-
-@mixin proyecto {
-    & img {
-        &:hover {
-            opacity: .5;
-            cursor: pointer;
-            transition: 1s;
-        }
-    }
-}
-
-@mixin grid-col-1 {
-    grid-column: 1/2;
-}
-
-@mixin grid-col-2 {
-    grid-column: 2/3;
-}
-
-@mixin grid-col-3 {
-    grid-column: 3/4;
-}
-
-.proyecto1 {
-    @include proyecto;
-    @include grid-col-1;
-}
-
-.proyecto2 {
-    @include proyecto;
-    @include grid-col-2;
-}
-
-.proyecto3 {
-    @include proyecto;
-    @include grid-col-3;
-}
-
-.proyecto4 {
-    @include proyecto;
-    @include grid-col-1;
-}
-
-.proyecto5 {
-    @include proyecto;
-    @include grid-col-2;
-}
-
-.proyecto6 {
-    @include proyecto;
-    @include grid-col-3;
-}
 
 .activo {
     background: rgba( 255, 255, 255, 0.20);
@@ -174,3 +99,55 @@
 .activo2 {
     background: #000000;
 }
+
+.link {
+    color: #ffffff;
+    position: absolute;
+    top: 70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 00;
+    line-height: 1.2;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+
+    &:hover{
+        text-decoration: none;
+        cursor: pointer;
+        background-size: 100% 2px;
+        color: #ffffff;
+    }
+}
+
+.link__light    {
+    color: #000000;
+    position: absolute;
+    top: 95%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 00;
+    line-height: 1.2;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+
+    &:hover{
+        text-decoration: none;
+        cursor: pointer;
+        background-size: 100% 2px;
+        color: #000000;
+    }
+}
+
+
