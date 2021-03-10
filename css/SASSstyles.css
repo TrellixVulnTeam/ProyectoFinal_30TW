@@ -27,14 +27,10 @@
   border: 2px solid #000000;
   border-radius: 10px; }
   .btn__light:hover {
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(40, 40, 44, 0.37);
-    backdrop-filter: blur(11px);
-    -webkit-backdrop-filter: blur(11px);
-    border-radius: 10px;
+    background-color: #000000;
     text-decoration: none;
-    color: #000000;
-    transition: 1s ease-in-out;
+    color: #ffffff;
+    transition: .5s ease-in-out;
     cursor: pointer; }
 
 .enviar {
