@@ -88,54 +88,6 @@ header {
     color: #ffffff;
 }
 
-.hero {
-    background-image: url(../img/fondos_header/index_header.jpeg);
-    height: 100vh;
-    background-position: center center;
-    background-size: cover;
-}
-
-.sobre-hero {
-    background-image: url(../img/fondos_header/sobre_header.jpg);
-    background-attachment: fixed;
-    height: 100vh;
-    background-position: center center;
-}
-
-.inmuebles-hero {
-    background-image: url(../img/fondos_header/inmuebles_header.jpg);
-    background-attachment: fixed;
-    height: 100vh;
-    background-position: center center;
-}
-
-.portafolioint-hero {
-    background-image: url(../img/fondos_header/portafolio_int_header.jpg);
-    background-attachment: fixed;
-    height: 100vh;
-    background-position: center center;
-}
-
-.portafolioext-hero {
-    background-image: url(../img/fondos_header/portafolio_ext_header.jpg);
-    background-attachment: fixed;
-    height: 100vh;
-    background-position: center center;
-}
-
-.contacto-hero {
-    background-image: url(../img/fondos_header/contacto_header.jpg);
-    background-attachment: fixed;
-    height: 100vh;
-    background-position: center center;
-}
-
-.proyectos-hero {
-    background-image: url(../img/fondos_header/proyectos.jpg);
-    background-attachment: fixed;
-    height: 100vh;
-    background-position: center center;
-}
 
 .contenido-header {
     height: 100%;
@@ -400,21 +352,21 @@ header label:hover {
     position: relative;
     height: 100%;
     width: 100%;
-    background-image: url(../img/fondos_header/index_header.jpeg);
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_960_720.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2) {
-    background-image: url(../img/fondos_header/inmuebles_header.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_960_720.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3) {
-    background-image: url(../img/fondos_header/diseño_index.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/18/17/20/couch-1835923_960_720.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -475,18 +427,13 @@ header label:hover {
 
 /* Titulo*/
 
-.invisible {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.invisible::after {
-    content: '';
-}
-
 .titulo,
 .titulo-index {
+    position: absolute;
+    top: 80;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -549,9 +496,6 @@ a .fa-angle-double-down {
 
 .imagen-somos img{
     border-radius: 10px;
-    -webkit-box-shadow: 20px 22px 37px 5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 20px 22px 37px 5px rgba(0,0,0,0.75);
-    box-shadow: 20px 22px 37px 5px rgba(0,0,0,0.75);
     align-self: center;
     justify-self: center;
 }
