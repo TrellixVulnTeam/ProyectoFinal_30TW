@@ -20,27 +20,38 @@ a:hover{
 }
 
 h1 {
+    font-size: 4.768rem;
     color: #ffffff;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3.815rem;
     color: #000000;
     padding: 3rem;
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 3.052rem;
     color: #000000;
 }
 
 h4 {
-    font-size: 2.5rem;
+    font-size: 2.441rem;
+    color: #000000;
+}
+
+h5{
+    font-size: 1.953rem;
     color: #000000;
 }
 
 p {
 
+    font-size: 2rem;
+    color: #333333;
+}
+
+label {
     font-size: 2rem;
     color: #333333;
 }
@@ -58,16 +69,23 @@ img {
 
 .contenedor-main {
     max-width: 1200px;
-    width: 100%;
+    width: 85%;
     margin: 0 auto;
 }
+
+.contenedor-form{
+    max-width: 1000px;
+    width: 85%;
+    margin: 0 auto;
+}
+
 
 main {
     padding-bottom: 5rem;
 }
 
 
-/**header**/
+/*----------------------------------------------------------------header-----------------------------------------------------*/
 
 header {
     background-color: #000000;
@@ -258,33 +276,23 @@ header label:hover {
     0% {
         transform: scale(0);
     }
-    10% {
-        transform: scale(.1);
-    }
+
     20% {
         transform: scale(.2);
     }
-    30% {
-        transform: scale(.3);
-    }
+
     40% {
         transform: scale(.4);
     }
-    50% {
-        transform: scale(.5);
-    }
+
     60% {
         transform: scale(.6);
     }
-    70% {
-        transform: scale(.7);
-    }
+
     80% {
         transform: scale(.8);
     }
-    90% {
-        transform: scale(.9);
-    }
+
     100% {
         transform: scale(1);
     }
@@ -322,7 +330,7 @@ header label:hover {
 }
 
 
-/*slider*/
+/*----------------------------------------------------------Index---------------------------------------------------------------*/
 
 #carouselExampleIndicators {
     position: relative;
@@ -471,7 +479,7 @@ a .fa-angle-double-down {
 }
 
 
-/* Sobre Nosotros */
+/*---------------------------------------------------------- Sobre Nosotros----------------------------------------------- */
 
 .grid-sobre {
     display: grid;
@@ -487,10 +495,6 @@ a .fa-angle-double-down {
 }
 
 .grid-sobre>h2 {
-    text-align: center;
-}
-
-.grid-proceso>h3 {
     text-align: center;
 }
 
@@ -621,14 +625,65 @@ a .fa-angle-double-down {
     line-height: 1;
     font-weight: 300;
     top: -93%;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
+/* -----------------------------------------------------------Inmuebles--------------------------------------------------------------------------------------*/
+
+.grid-procesos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+}
+
+.investigar{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.buscar{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.entregar{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.listo  {
+    grid-column: 2/3;
+
+}
+
+.grid-tarjetas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+/*-------------------------------------------------------------- Catálogo------------------------------------------------------------ */
+
+.grid-procesos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.proceso>h5{
+    text-align: center;
+}
+
+.proceso>p{
+    text-align: justify;
+}
 
 /* Catálogo */
 
 .card{
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     border-radius: 10px;
     width: 100%;
     height: auto;
@@ -792,7 +847,7 @@ a .fa-angle-double-down {
 }
 
 
-/* Galeria Portafolio de interiores y exteriores */
+/*--------------------------------------- Galeria Portafolio de interiores y exteriores -------------------------------------------------*/
 
 @media (min-width:320px) {
     .contenedor-imagenes {
@@ -862,8 +917,92 @@ a .fa-angle-double-down {
     }
 }
 
+/*---------------------------------------------------------------Contacto------------------------------------------------------*/
 
-/*footer*/
+.grid-form{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}
+
+.formulario-title{
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: start;
+}
+
+.formulario-txt, textarea, .servicio{
+    border: 2px solid #868686;
+    border-radius: 5px;
+    margin: 2rem 0;
+    padding: .5rem 0;
+    width: 400px;
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+@media (max-width:480px){
+    .formulario-txt, textarea, .servicio{
+        width: 300px;
+    }
+}
+
+.nombre{
+    grid-column: 1/2;
+    justify-self: center;
+    align-items: center;
+}
+
+
+.apellido{
+    grid-column: 1/2;
+    justify-self: center;
+    align-items: center;
+}
+
+.email{
+    grid-column: 1/2;
+    justify-self: center;
+    align-items: center;
+}
+
+.servicio{
+    grid-column: 1/2;
+    justify-self: center;
+    align-items: center;
+}
+
+.mensaje{
+    grid-column: 1/2;
+    justify-self: center;
+    align-items: center;
+}
+
+.grid-contacto{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(3,50px);
+}
+
+.icono-contacto{
+    grid-column: 1/2;
+    font-size: 3rem;
+    justify-self: end;
+    align-self: center;
+
+}
+
+.contacto-info{
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+    text-align: left;
+}
+
+
+
+
+/*----------------------------------------------------------------------footer-----------------------------------------------------*/
 
 footer {
     background-color: #000000;

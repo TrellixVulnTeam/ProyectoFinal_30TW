@@ -69,79 +69,47 @@
         </div> 
     </header> <!--Header-->
 
-<main class="contenedor">
+<main class="contenedor-main">
         <div class="titulo-main"  id="tituloMain">
-            <h2>Llene el siguiente formulario</h2>
+            <h2 data-aos="fade-down">Llena el siguiente formulario</h2>
         </div>
 
 
-        <form>
-            <div class="form contenedor">
+        <form class="grid-form contenedor-form" data-aos="fade-left">
 
-                <div class="row py-5">
-                    <div class="col">
-                        <p class="h2">Nombre(s)</p>
-                        <input type="text" placeholder="Nombre(s)">
-                    </div>
-                    <div class="col">
-                        <p class="h2">Apellido(s)</p>
-                        <input type="text" placeholder="Apellido(s)">
-                    </div>
-                </div>
+            <input class="formulario-txt nombre" id="nombre" name="nombre" placeholder="Nombre(s)">
 
-                <div class="row py-5">
-                        <div class="col">
-                        <p class="h2">E-mail</p>
-                        <input type="email" placeholder="Ejemplo@mail.com">
-                    </div>
-                </div>
+            <input class="formulario-txt apellido" id="Apellido" name="Apellido" placeholder="Apellido(s)">
 
-                <div class="row py-5">
+            <input class="formulario-txt email" id="email" name="email" placeholder="E-mail">
 
-                        <div class="col">                        
-                            <p class="h2">¿Qué servicio requiere?</p>
-                        </div>
-                    
+            <select class="servicio" name="servicio" id="">
 
-                        <div class="col">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-check px-5">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
-                                        <label class="form-check-label h4 px-2" for="exampleRadios1">
-                                        Inmueble
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-check px-5">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
-                                        <label class="form-check-label h4 px-2" for="exampleRadios1">
-                                        Diseño
-                                        </label>
-                                    </div>
-                                </div> 
-                            </div>     
-                        </div>
+                <option hidden selected value="servicio">Servicio</option>
 
-                </div>
+                <option value="inmueble">Inmueble</option>
+                <option value="inmueble">Proyecto</option>
+                <option value="inmueble">Diseño de Interiores</option>
+                <option value="inmueble">Diseño de exteriores</option>
 
-                <div class="row py-5">
-                    <div class="col">
-                        <p class="h2">Mensaje</p>
-                        <textarea class="form-control h-100 border-dark" id="mensaje" rows="3"></textarea>
-                    </div>
-                </div>
+            </select>
 
-                
-                
-                <div class="row py-5">
-                    <button type="submit" class="col btn btn-outline-dark col p-4  w-100">Enviar</button>
-                </div>    
+            <textarea class="mensaje" id="mensaje" name="mensaje" rows="10" cols="150" placeholder="Déjanos un mensaje."></textarea>
 
-            </div>
-          </form>   
+            <input class="enviar__light" id="submit" name="submit" type="submit" value="Enviar">    
 
+        </form> 
+        
+        
+        <p class="text-center p-5" data-aos="fade-up">También puedes contactarte por estos medios:</p>
+
+        <div class="grid-contacto">
+
+            <i  data-aos="fade-up" class="icono-contacto fas fa-phone"></i><p class="contacto-info text-center p-5" data-aos="fade-up">+00 000 000 0000</p>
+            <i  data-aos="fade-up" class="icono-contacto fas fa-envelope"></i><p class="contacto-info text-center p-5" data-aos="fade-up">contacto@fakemail.com</p>
+            <i  data-aos="fade-up" class="icono-contacto fas fa-map-pin"></i><p class="contacto-info text-center p-5" data-aos="fade-up">Av. Fake Cll. 00 #0A-00</p>
+
+        </div>
 
 </main>
 

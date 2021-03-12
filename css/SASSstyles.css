@@ -55,11 +55,14 @@
 
 .enviar__light {
   padding: 1rem 6rem;
+  margin: 2rem 2rem 2rem 0;
   font-size: 2rem;
   color: #000000;
   background-color: transparent;
   border: 2px solid #000000;
-  border-radius: 10px; }
+  border-radius: 10px;
+  grid-column: 1/2;
+  justify-self: center; }
   .enviar__light:hover {
     background-color: #000000;
     text-decoration: none;

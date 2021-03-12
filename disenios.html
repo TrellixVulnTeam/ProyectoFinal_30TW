@@ -22,45 +22,44 @@
                 </div>
                  <!--Barra de navegacion-->
 
-			<div class="col-lg-12 navbar p-0  navbar-expand-lg">	
-				<div class="logo navbar-brand text-white">
-                    <a href="index.html">
-                        <p class="logo">Crystal Houses</p>
-                    </a>
-				</div>
-				
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-					<div id="nav-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                 <div class="col-lg-12 navbar p-0  navbar-expand-lg" id="menu">	
+                    <div class="logo navbar-brand text-white">
+                        <a href="index.html">
+                            <p class="logo">Crystal Houses</p>
+                        </a>
                     </div>
-				</button>	
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <div id="nav-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>	
 
-                <nav class="menu collapse navbar-collapse " id="navbarTogglerDemo03">
-                    <ul class="navbar-nav ml-auto">
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="inmuebles.html">Inmuebles</a>
-                            
-                                <ul>
-                                    <li><a class="Item" href="catalogo.html">Catálogo</a></li>
-                                    <li><a class="Item" href="proyectos.html">Proyectos</a></li>
+                    <nav class="menu collapse navbar-collapse " id="navbarTogglerDemo03">
+                        <ul class="navbar-nav ml-auto">
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="inmuebles.html">Inmuebles</a>
+                                
+                                    <ul id="submenu1">
+                                        <li><a href="catalogo.html">Catálogo</a></li>
+                                        <li><a href="proyectos.html">Proyectos</a></li>
+                                    </ul>
+                                
+                            </li>
+                            <li class="activo"><a href="disenios.html">Diseños</a>
+                                    
+                                <ul id="submenu2">
+                                    <li><a href="portafolio_int.html">Portafolio diseño interiores</a></li>
+                                    <li><a href="portafolio_ext.html">Portafolio diseño exteriores</a></li>
                                 </ul>
                             
-                        </li>
-                        <li class="activo"><a href="disenios.html">Diseños</a>
-                                
-                            <ul>
-                                <li><a class="Item" href="portafolio_int.html">Portafolio diseño interiores</a></li>
-                                <li><a class="Item" href="portafolio_ext.html">Portafolio diseño exteriores</a></li>
-                            </ul>
-                        
-                        </li>
-                        <li><a href="contacto.html">Contacto</a></li>      
-                    </ul>
-                </nav>
-            
-			</div>
+                            </li>
+                            <li><a href="contacto.html">Contacto</a></li>      
+                        </ul>
+                    </nav>
+                </div>
                 <div class="titulo">
                     <h1 class="hijo">
                         Diseños
@@ -72,12 +71,73 @@
         </div> 
 </header> <!--Header-->
 
-<main>
-        <div class="titulo-main"  id="tituloMain">
-            <h2>¿Qué hacemos?</h2>
+<main class="contenedor-main">
+    <div class="titulo-main"  id="tituloMain">
+        <h2 data-aos="fade-down">Procesos</h2>
+    </div>
+
+
+        <p class="text-justify" data-aos="fade-up">
+            Nuestros procesos están pensados para que la persona que vaya a rentar o comprar un inmueble pueda
+            tener una muy buena asesoría y pueda escojer  a su conveniencia.
+        </p>
+
+        <p class="text-justify" data-aos="fade-up">
+            Contamos con un equipo selecto de agentes de bienes raíces, igualmente tenemos contacto con los más
+            especializados 
+        </p>
+
+        <h4 class="text-center p-5" data-aos="fade-down">Nuestros procesos se dividen en</h4>
+
+        <div class="grid-procesos">
+
+            <div class="proceso card investigar">
+                <h5 class="card-title">Investigar</h5>
+                <div class="card-img"><img src="https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg" alt=""></div>
+                <p class="text-center">Hablamos con el cliente y buscamos cuales son sus preferencias en inmuebles</p>
+            </div>
+
+            <div class="proceso card buscar">
+                <h5 class="card-title">Buscar</h5>
+                <div class="card-img"><img src="https://cdn.pixabay.com/photo/2015/10/12/14/56/houses-984013_960_720.jpg" alt=""></div>
+                <p class="text-center">Buscamos un inmueble el cual se acomode al gusto de dicho cliente</p>
+            </div>
+
+            <div class="proceso card entregar">
+                <h5 class="card-title">Entregar</h5>
+                <div class="card-img"><img src="https://cdn.pixabay.com/photo/2019/10/02/14/23/house-keys-4521073_960_720.jpg" alt=""></div>
+                <p class="text-center">Buscamos un inmueble el cual se acomode al gusto de dicho cliente</p>
+            </div>
+
+            <p class="display-4 text-center text-dark listo">¡Y Listo!</p>
+
         </div>
 
-        <p>In egestas vitae felis sit amet vehicula. Suspendisse a efficitur felis. Pellentesque non nisi elementum, aliquam odio sit amet, commodo est. Fusce quis semper nunc, id malesuada purus. Etiam faucibus ac risus id rutrum. Nam maximus, libero vitae viverra blandit, odio velit dapibus quam, et fermentum urna risus in dolor. Maecenas nulla lacus, volutpat vel nisl eu, euismod porttitor orci. Praesent a venenatis dui.</p>
+            <p class="text-justify p-5" data-aos="fade-up">
+                Contamos con varios inmuebles alredeor del mundo, estos los puedes encontrar en nuestra sección de <b>Catálogo</b>.Igualmente estamos buscando inversores para 
+                hacer nuevos 
+                <br>Si quieres, puedes visitar:
+            </p>
+
+            <div class="grid-tarjetas">
+
+                <div class="tarjetas">
+                    <div class="tarjeta-sobre tarjeta1" data-aos="flip-right" data-aos-duration="2000">
+                        <div class="fondo">
+                            <img src="https://cdn.pixabay.com/photo/2020/02/02/17/07/living-room-modern-tv-4813591_960_720.jpg" alt="Imagen apartamento">
+                            <p class="titulo-tarjeta display-3 text-white text-center">Diseño de Interiores</p>
+                            <div class="link"><a href="portafolio_int.html">Ir ahora</a></div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-sobre tarjeta2" data-aos="flip-left" data-aos-duration="2000">
+                        <div class="fondo">
+                            <img src="https://cdn.pixabay.com/photo/2014/01/30/01/57/outside-254716_960_720.jpg" alt="Imagen diseño exterior">
+                            <p class="titulo-tarjeta display-3 text-white text-center">Diseños de Exteriores</p>
+                            <div class="link"><a href="portafolio_ext.html">Ir ahora</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 </main>
 
 <footer>     
