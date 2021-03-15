@@ -225,28 +225,83 @@ nav.menu ul li ul {
     min-width: 140px;
 }
 
-nav.menu ul li:hover ul,
-.ventana-menu {
-    padding: 2rem 2rem;
-    margin: 0;
-    display: block;
-    background: rgba( 255, 255, 255, 0.20);
-    box-shadow: 0 8px 32px 0 rgba(78, 78, 85, 0.37);
-    backdrop-filter: blur( 3.5px);
-    -webkit-backdrop-filter: blur( 3.5px);
-    border-radius: 10px;
-    animation-name: despliegue;
-    animation-duration: .3s;
+
+@media (min-width:1024px) {
+    nav.menu ul li:hover ul,
+    .ventana-menu {
+        padding: 2rem 2rem;
+        margin: 0;
+        display: block;
+        background: rgba( 255, 255, 255, 0.20);
+        box-shadow: 0 8px 32px 0 rgba(78, 78, 85, 0.37);
+        backdrop-filter: blur( 3.5px);
+        -webkit-backdrop-filter: blur( 3.5px);
+        border-radius: 10px;
+        animation-name: despliegue;
+        animation-duration: .3s;
+    }
+
+    nav.menu ul li:hover ul li {
+        margin: 0;
+        padding: 1rem 0;
+        display: block;
+    }
+
+    nav.menu ul li:hover ul li a {
+        text-align: left;
+    }
+
+    @keyframes despliegue {
+        0% {
+            transform: scale(0);
+        }
+    
+        20% {
+            transform: scale(.2);
+        }
+    
+        40% {
+            transform: scale(.4);
+        }
+    
+        60% {
+            transform: scale(.6);
+        }
+    
+        80% {
+            transform: scale(.8);
+        }
+    
+        100% {
+            transform: scale(1);
+        }
+    }
 }
 
-nav.menu ul li:hover ul li {
-    margin: 0;
-    padding: 1rem 0;
-    display: block;
-}
+@media (max-width:1023px){
 
-nav.menu ul li:hover ul li a {
-    text-align: left;
+    nav.menu ul li ul {
+        display: block;
+        position: relative;
+        min-width: 140px;
+    }
+
+    nav.menu ul li ul li{
+        display: block;
+    }
+    
+    nav.menu ul li ul li a:before{
+        content: "•"; 
+        padding-right: 8px;
+        color: #ffffff;
+        font-size: 2rem;
+    }
+
+    nav.menu ul li ul li a{
+        font-size: 1.5rem;
+    }
+
+
 }
 
 nav.menu ul li ul li:hover {
@@ -272,31 +327,7 @@ header label:hover {
     background-color: rgba(0, 0, 0, 0.15);
 }
 
-@keyframes despliegue {
-    0% {
-        transform: scale(0);
-    }
 
-    20% {
-        transform: scale(.2);
-    }
-
-    40% {
-        transform: scale(.4);
-    }
-
-    60% {
-        transform: scale(.6);
-    }
-
-    80% {
-        transform: scale(.8);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
 
 
 /* navbar */
@@ -638,6 +669,7 @@ a .fa-angle-double-down {
     grid-template-rows: repeat(2,auto);
 }
 
+
 .investigar{
     grid-column: 1/2;
     grid-row: 1/2;
@@ -656,6 +688,28 @@ a .fa-angle-double-down {
 .listo  {
     grid-column: 2/3;
 
+}
+
+@media (max-width:768px){
+    .proceso1{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    
+    .proceso2{
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    
+    .proceso3{
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    
+    .listo  {
+        grid-column: 2/3;
+    
+    }
 }
 
 .grid-tarjetas{
@@ -916,6 +970,8 @@ a .fa-angle-double-down {
         width: 32%;
     }
 }
+
+
 
 /*---------------------------------------------------------------Contacto------------------------------------------------------*/
 

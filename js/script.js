@@ -35,3 +35,22 @@ $(document).ready(function() {
         $(this).toggleClass('open');
     });
 });
+
+
+const buttons = document.querySelectorAll('.imagen');
+const lightbox = document.querySelector('.lightbox');
+const overlayimg = document.querySelector('.lightbox-inner img');
+
+
+function open(e){
+    lightbox.classList.add('open');
+    const src = e.currentTarget.querySelector('img').src;
+    overlayimg.src = src;
+}
+
+function close(){
+    lightbox.classList.remove('open');
+}
+
+    buttons.forEach(button => button.addEventListener('click', open));
+    lightbox.addEventListener('click',close);
